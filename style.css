@@ -127,6 +127,7 @@ a {
 
 .main {
   background-color: #202027;
+  padding-bottom: 96px;
 }
 .main__heading {
   width: 788px;
@@ -206,6 +207,97 @@ a {
   padding-bottom: 36px;
   padding-left: 32px;
   padding-right: 32px;
+}
+
+.mini-games {
+  background: #202027;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  padding-bottom: 144px;
+}
+.mini-games__heading {
+  color: #FFF;
+  font-size: 64px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  padding-bottom: 40px;
+}
+.mini-games__image {
+  border-radius: 30px;
+}
+.mini-games__games {
+  border-radius: 30px;
+  background: #FFF;
+  display: flex;
+}
+.mini-games__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 48px 100px 48px 48px;
+  width: 457px;
+}
+.mini-games__info-heading {
+  color: #202027;
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+}
+.mini-games__info-description {
+  color: #202027;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.mini-games__button {
+  margin-top: 12px;
+  display: flex;
+  padding: 16px 28px;
+  width: 247px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 60px;
+  background: #202027;
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 141.688%;
+  transition: all ease-out 0.5s;
+}
+.mini-games__button:hover {
+  background-color: #FFFFFF;
+  color: #202027;
+  border-radius: 60px;
+  border: 1px solid #000;
+}
+
+.footer {
+  height: 150px;
+  background: #BDED35;
+}
+.footer__copyright {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  padding-top: 61px;
 }
 
 @media (max-width: 767px) {
@@ -290,6 +382,7 @@ a {
     padding-top: 48px;
     grid-template-columns: 1fr;
     gap: 24px;
+    width: 343px;
   }
   .main__image {
     width: 343px;
