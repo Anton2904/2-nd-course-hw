@@ -106,7 +106,9 @@ a{
         top: 568px;
     }
 
-    
+   &__star-mob{
+    display: none;
+   } 
 
     &__background{
        position: absolute;
@@ -175,6 +177,10 @@ a{
             font-family: $primaryFont;
             line-height: normal;
             font-weight: 700;
+        }
+
+        &__heading-name-mobile{
+            display: none;
         }
 
         &__heading-description{
@@ -249,5 +255,5 @@ a{
         }
 }
 
-
+@import 'mobile';
 

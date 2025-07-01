@@ -1,0 +1,120 @@
+@media (max-width: 767px){
+.center{
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 700px;
+
+    &__info{
+        padding-top: 147px;
+        width: 296px;
+        align-items: center;
+        
+    }
+
+    &__heading{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    &__description{
+        text-align: center;
+        font-size: 16px;
+        line-height: normal;
+        padding-bottom: 12px;
+    }
+
+    &__button{
+        width: 285px;
+    }
+
+    &__star1{
+        left: 91px;
+        top: 64px;
+        width: 21px;
+        height: 21px;
+    }
+
+    &__star2{
+        left: 37px;
+        top: 97px;
+        width: 35px;
+        height: 35px;
+    }
+
+    &__star3{
+        left: 272px;
+        top: 557px;
+        width: 18px;
+        height: 18px;
+    }
+
+    &__star4{
+        left: 303px;
+        top: 580px;
+        width: 39px;
+        height: 41px;
+
+    }
+
+    &__star5{
+        display: none;
+        
+    }
+
+    &__star-mob{
+        display: block;
+    }
+
+    &__background-line{
+        display: none;
+    }
+}
+
+.main{
+    &__heading{
+        padding-top: 48px;
+    }
+
+    &__heading-name{
+        display:none;
+    }
+
+    &__heading-name-mobile{
+        display: block;
+        color: #FFF;
+        font-family: $primaryFont;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__heading-description{
+        display: none;
+    }
+
+    &__games{
+        padding-top: 48px;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    &__image{
+        width: 343px;
+        height: 286px;
+    }
+
+    &__games-cards{
+        display: flex;
+    }
+
+    &__games-cards-big{
+        margin-top: 0px;
+    }
+}
+
+}

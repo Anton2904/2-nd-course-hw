@@ -90,6 +90,9 @@ a {
   left: 1013px;
   top: 568px;
 }
+.header__star-mob {
+  display: none;
+}
 .header__background {
   position: absolute;
   display: flex;
@@ -141,6 +144,9 @@ a {
   font-family: "Montserrat", sans-serif;
   line-height: normal;
   font-weight: 700;
+}
+.main__heading-name-mobile {
+  display: none;
 }
 .main__heading-description {
   color: #FFF;
@@ -200,4 +206,99 @@ a {
   padding-bottom: 36px;
   padding-left: 32px;
   padding-right: 32px;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+  }
+  .header {
+    height: 700px;
+  }
+  .header__info {
+    padding-top: 147px;
+    width: 296px;
+    align-items: center;
+  }
+  .header__heading {
+    text-align: center;
+    font-size: 40px;
+  }
+  .header__description {
+    text-align: center;
+    font-size: 16px;
+    line-height: normal;
+    padding-bottom: 12px;
+  }
+  .header__button {
+    width: 285px;
+  }
+  .header__star1 {
+    left: 91px;
+    top: 64px;
+    width: 21px;
+    height: 21px;
+  }
+  .header__star2 {
+    left: 37px;
+    top: 97px;
+    width: 35px;
+    height: 35px;
+  }
+  .header__star3 {
+    left: 272px;
+    top: 557px;
+    width: 18px;
+    height: 18px;
+  }
+  .header__star4 {
+    left: 303px;
+    top: 580px;
+    width: 39px;
+    height: 41px;
+  }
+  .header__star5 {
+    display: none;
+  }
+  .header__star-mob {
+    display: block;
+  }
+  .header__background-line {
+    display: none;
+  }
+  .main__heading {
+    padding-top: 48px;
+  }
+  .main__heading-name {
+    display: none;
+  }
+  .main__heading-name-mobile {
+    display: block;
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .main__heading-description {
+    display: none;
+  }
+  .main__games {
+    padding-top: 48px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .main__image {
+    width: 343px;
+    height: 286px;
+  }
+  .main__games-cards {
+    display: flex;
+  }
+  .main__games-cards-big {
+    margin-top: 0px;
+  }
 }/*# sourceMappingURL=style.css.map */
