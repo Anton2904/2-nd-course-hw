@@ -29,6 +29,8 @@
 
     &__button{
         width: 285px;
+        box-sizing: border-box;
+        font-size: 16px;
     }
 
     &__star1{
@@ -75,6 +77,7 @@
 }
 
 .main{
+    display: none;
     &__heading{
         padding-top: 48px;
     }
@@ -118,6 +121,65 @@
     }
 }
 
+.mini-games{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    
 
+   
+    &__heading{
+    font-size: 40px;
+    padding-bottom: 16px;
+   }
+
+   &__games{
+    flex-direction: column;
+    width: 343px;
+   }
+
+   &__image{
+    display: none;
+   }
+
+   &__image-mobile{
+    border-radius: 30px;
+    display: block;
+   }
+
+   &__info{
+    width: 285px;
+    margin-left: 29px;
+    margin-right: 29px;
+    gap: 16px;
+   }
+
+   &__info-heading{
+    font-size: 32px;
+   }
+
+   &__info-description{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   }
+
+   &__button{
+    width: 285px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: 16px;
+   }
+
+}
+
+.footer{
+    height: 100px;
+    
+    &__copyright{
+        font-size: 16px;
+        padding-top: 40px;
+    }
+}
 
 }
