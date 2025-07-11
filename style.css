@@ -329,6 +329,8 @@ a {
   }
   .header__button {
     width: 285px;
+    box-sizing: border-box;
+    font-size: 16px;
   }
   .header__star1 {
     left: 91px;
@@ -439,5 +441,12 @@ a {
     font-size: 16px;
     box-sizing: border-box;
     margin-top: 16px;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer__copyright {
+    font-size: 16px;
+    padding-top: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
