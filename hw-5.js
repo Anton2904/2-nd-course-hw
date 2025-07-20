@@ -33,6 +33,13 @@ function squareNumber(number) {
 
 squareNumber(5); // Квадрат числа 5
 
+
+function returnSqareNumber(number){
+    return number * number;
+}
+
+console.log(returnSqareNumber(10));
+
 // 4 Задание
 
 function userAge() {
@@ -53,15 +60,20 @@ userAge();
 
 // 5 Задание
 
-function checkingNumbers(number1, number2) {
-    if (number1 === Number(number1) && number2 === Number(number2)) {
-            return number1 * number2;
-    } else {
-            return ('Одно или оба значения не являются числом')
-    }
+function checkingNumbers(a, b){
+  let number1 = Number(a);
+  let number2 = Number(b);
+  
+  if(isNaN(number1) || isNaN(number2)){
+    return ('Одно или оба значения не являются числом')
+  }else{
+    return number1 * number2;
+  }
+  
 }
+   
 
-console.log(checkingNumbers('3', 2));
+console.log(checkingNumbers('Привет', 2));
 console.log(checkingNumbers(6, 2));
 
 // 6 Задание
@@ -70,7 +82,7 @@ function cubingNumber() {
     let number = Number(prompt('Введите число'));
 
     if (number === Number(number)) {
-        let cube = number * number * number;
+        let cube = number ** 3;
         return (`${number} в кубе равняется ${cube}`);
     } else {
         return ('Переданный параметр не является числом');
@@ -82,11 +94,11 @@ console.log(cubingNumber());
 // 7 Задание
 
 function getArea(radius) {
-    return this.radius * this.radius;    
+    return Math.PI * this.radius ** 2;    
 }
 
 function getPerimeter(radius) {
-    return (this.radius + this.radius) * 2;
+    return 2 * Math.PI * this.radius;
 }
 
 const circle1 = {
