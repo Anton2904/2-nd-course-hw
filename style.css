@@ -175,6 +175,10 @@ a {
 .main__games-link {
   text-decoration: none;
   color: #202027;
+  transition: all ease-in 0.5s;
+}
+.main__games-link:hover {
+  transform: scale(1.1);
 }
 .main__image {
   border-radius: 30px;

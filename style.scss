@@ -215,6 +215,11 @@ a{
         &__games-link{
             text-decoration: none;
             color: $fontColor;
+            transition: all ease-in 0.5s;
+        }
+
+        &__games-link:hover{
+            transform: scale(1.1);
         }
 
         &__image{
