@@ -28,10 +28,25 @@ function playSimpleQuiz() {
 
         const userAnswer = parseInt(prompt(questionText));
         
+        
         if (userAnswer === currentQuestion.correctAnswer) {
                 correctAnswers++;
+                
+            
             }
+        
+        
+        if (userAnswer) {
+            alert('Следующий вопрос');
+        }else{
+            alert('Игра окончена!');
+            break;
+        }
+
     }
 
+    
     alert(`Правильных ответов: ${correctAnswers} из ${quiz.length}`);
+
+    
 }
