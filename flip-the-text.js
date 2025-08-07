@@ -1,14 +1,24 @@
 function playFlipTheText(){
 
-    do {
         let userInput = prompt('Введите любой текст и я его переверну!');
     
+        if (userInput === null || userInput.trim() === "") {
+            alert('Игра окончена.');
+        return;
+    }
+
         let flip =  userInput.split('').reverse().join('');
 
         alert(flip); 
-        const result = confirm('Хотите продолжить?');
-        result?playFlipTheText():alert('Игра окончена.')
+        
+        const wantContinue = confirm('Хотите продолжить?');
+        if (wantContinue) {
+            playFlipTheText(); 
+        } else {
+            alert('Игра окончена.');
+    }
+   
+
     
-    } while (result);
     
 }
