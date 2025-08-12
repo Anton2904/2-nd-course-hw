@@ -31,14 +31,14 @@ function filter(array, ruleFunction) {
 
 console.log(filter([3, -4, 1, 9], isPositive));
 
-const people = [
+const peoples = [
    {name: 'Глеб', gender: 'male'},
    {name: 'Анна', gender: 'female'},
    {name: 'Олег', gender: 'male'},
    {name: 'Оксана', gender: 'female'}
 ];
 
-console.log(filter(people, isMale));
+console.log(filter(peoples, isMale));
 
 
 // 3 Задание
